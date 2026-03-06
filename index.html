@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Portfolio | Creative Developer</title>
+    <meta
+      name="description"
+      content="Portfolio website showcasing projects, services, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home">NOVA</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero reveal">
+        <p class="eyebrow">Creative Developer • Portfolio</p>
+        <h1>Building memorable digital experiences with code and creativity.</h1>
+        <p class="hero-text">
+          I design and develop high-performing websites, web apps, and interactive
+          interfaces that help brands stand out.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Hire Me</a>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <h2>About Me</h2>
+        <p>
+          I’m a full-stack developer focused on crafting modern, user-centered web
+          experiences. My approach combines strong design principles with
+          scalable engineering to deliver products users love.
+        </p>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>A snapshot of work that blends strategy, design, and development.</p>
+        </div>
+        <div class="grid cards">
+          <article class="card">
+            <h3>SaaS Dashboard</h3>
+            <p>
+              Analytics platform with role-based access, realtime charts, and
+              optimized performance.
+            </p>
+            <span>React • Node.js • PostgreSQL</span>
+          </article>
+          <article class="card">
+            <h3>E-commerce Redesign</h3>
+            <p>
+              Conversion-focused storefront redesign with improved navigation and
+              checkout UX.
+            </p>
+            <span>Next.js • Stripe • Tailwind</span>
+          </article>
+          <article class="card">
+            <h3>Portfolio Generator</h3>
+            <p>
+              Tool that helps freelancers build personal sites quickly with custom
+              themes and SEO support.
+            </p>
+            <span>TypeScript • Express • MongoDB</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="section reveal">
+        <div class="section-header">
+          <h2>Services</h2>
+        </div>
+        <div class="grid services-grid">
+          <div class="service">
+            <h3>Website Development</h3>
+            <p>Responsive, fast, and accessible websites built for growth.</p>
+          </div>
+          <div class="service">
+            <h3>UI/UX Design</h3>
+            <p>User-focused interface design with clean visual systems.</p>
+          </div>
+          <div class="service">
+            <h3>Web App Engineering</h3>
+            <p>Robust full-stack applications tailored to business goals.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <h2>Let’s Work Together</h2>
+        <p>
+          Have an idea or project in mind? Send a message and I’ll get back to
+          you soon.
+        </p>
+        <form class="contact-form" onsubmit="return false;">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="Tell me about your project" rows="5" required></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Nova Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
